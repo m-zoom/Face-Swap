@@ -1,4 +1,4 @@
-# Magical Face Swap Tool 😄😄 
+# Face Swap
 
 ## What is this?
 
