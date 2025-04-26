@@ -425,9 +425,9 @@ def main():
     # Try multiple possible locations
     possible_paths = [
         "reference_face2.jpg",  # Same directory
-        os.path.join(current_dir, "reference_face2.jpg"),  # Absolute path
-        os.path.join(os.getcwd(), "reference_face2.jpg"),  # Current working directory
-        os.path.join(os.path.expanduser("~"), "reference_face2.jpg")  # Home directory
+        os.path.join(current_dir, "reference_face.jpg"),  # Absolute path
+        os.path.join(os.getcwd(), "reference_face.jpg"),  # Current working directory
+        os.path.join(os.path.expanduser("~"), "reference_face.jpg")  # Home directory
     ]
     
     # Try to find the reference image
@@ -439,7 +439,7 @@ def main():
     
     # If no reference image found, ask user for input
     if reference_image_path is None:
-        print("Reference image 'reference_face2.jpg' not found.")
+        print("Reference image 'reference_face.jpg' not found.")
         reference_image_path = input("Please enter the full path to your reference image: ").strip()
         
         if not os.path.exists(reference_image_path):
